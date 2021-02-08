@@ -12,6 +12,11 @@ namespace NewCalc
 {
     public partial class Form1 : Form
     {
+        int valor1;
+        int valor2;
+
+        int resultado;
+
         public Form1()
         {
             InitializeComponent();
@@ -22,9 +27,27 @@ namespace NewCalc
             Close();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void txtValores_TextChanged(object sender, EventArgs e)
         {
+            
+        }
 
+        private void btnSoma_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToInt16(txtValores.Text);
+            valor2 = Convert.ToInt16(txtValores2.Text);
+
+            resultado = valor1 + valor2;
+            lblResultado.Text = Convert.ToString(resultado);
+        }
+
+        private void btnSub_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToInt16(txtValores.Text);
+            valor2 = Convert.ToInt16(txtValores2.Text);
+
+            resultado = valor1 - valor2;
+            lblResultado.Text = Convert.ToString(resultado);
         }
     }
 }
