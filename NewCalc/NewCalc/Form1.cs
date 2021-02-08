@@ -17,6 +17,8 @@ namespace NewCalc
 
         int resultado;
 
+        string zerar = "0";
+
         public Form1()
         {
             InitializeComponent();
@@ -66,6 +68,13 @@ namespace NewCalc
 
             resultado = valor1 * valor2;
             lblResultado.Text = Convert.ToString(resultado);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            txtValores.Text = zerar;
+            txtValores2.Text = zerar;
+            lblResultado.Text = zerar;
         }
     }
 }
