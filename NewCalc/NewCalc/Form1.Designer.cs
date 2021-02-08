@@ -90,6 +90,7 @@
             this.btnDividir.TabIndex = 4;
             this.btnDividir.Text = "/";
             this.btnDividir.UseVisualStyleBackColor = true;
+            this.btnDividir.Click += new System.EventHandler(this.btnDividir_Click);
             // 
             // btnMult
             // 
@@ -99,6 +100,7 @@
             this.btnMult.TabIndex = 5;
             this.btnMult.Text = "x";
             this.btnMult.UseVisualStyleBackColor = true;
+            this.btnMult.Click += new System.EventHandler(this.btnMult_Click);
             // 
             // label1
             // 
@@ -123,7 +125,7 @@
             this.lblResultado.AutoSize = true;
             this.lblResultado.BackColor = System.Drawing.Color.White;
             this.lblResultado.Font = new System.Drawing.Font("MS PGothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(205, 120);
+            this.lblResultado.Location = new System.Drawing.Point(184, 118);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(26, 27);
             this.lblResultado.TabIndex = 8;

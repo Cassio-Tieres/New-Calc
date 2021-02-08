@@ -49,5 +49,23 @@ namespace NewCalc
             resultado = valor1 - valor2;
             lblResultado.Text = Convert.ToString(resultado);
         }
+
+        private void btnDividir_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToInt16(txtValores.Text);
+            valor2 = Convert.ToInt16(txtValores2.Text);
+
+            resultado = valor1 / valor2;
+            lblResultado.Text = Convert.ToString(resultado);
+        }
+
+        private void btnMult_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToInt16(txtValores.Text);
+            valor2 = Convert.ToInt16(txtValores2.Text);
+
+            resultado = valor1 * valor2;
+            lblResultado.Text = Convert.ToString(resultado);
+        }
     }
 }
